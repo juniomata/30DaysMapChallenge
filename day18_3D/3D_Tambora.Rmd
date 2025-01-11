@@ -1,0 +1,273 @@
+---
+title: "Tambora Volcano 3D Visualization"
+output: 
+  html_document:
+    toc: true
+    toc_float: 
+      collapsed: false
+      smooth_scroll: true
+    code_folding: show
+date: "2025-01-06"
+---
+
+# Create 3D Maps from Satellite Imagery
+
+## Setup
+To begin, we load the necessary packages. These libraries will help us with raster data manipulation, geospatial transformations, 3D rendering, and brightness/contrast adjustments. 
+```{r setup, echo=TRUE}
+# install.packages(c("rayshader", "raster", "sp"))
+library(rayshader)
+library(sp)
+library(raster)
+library(scales)
+library(sf)
+library(magick)
+library(showtext)
+library(grid)
+library(ragg)
+
+font_add_google("Merriweather", "merriweather")
+font_add_google("Playfair Display", "playfair")
+font_add_google("Lora", "lora")
+font_add_google("Arvo", "arvo")
+showtext_auto()
+```
+
+
+## Load Elevation Data
+Here, we load elevation data from two SRTM tiles. These tiles are merged into a single dataset to cover the region of interest. We then visualize the elevation using height shading to check the data.
+```{r load_srtm, echo=TRUE}
+# Load SRTM elevation tiles
+elevation1 = raster::raster("S09E117.SRTMGL1.hgt/S09E117.hgt")
+elevation2 = raster::raster("S09E118.SRTMGL1.hgt/S09E118.hgt")
+
+# Merge tiles into one seamless elevation dataset
+elevation = raster::merge(elevation1, elevation2)
+
+# Visualize the elevation data
+height_shade(raster_to_matrix(elevation)) %>%
+  plot_map()
+```
+
+
+## Load Satellite Imagery
+Next, we load satellite imagery as separate red, green, and blue bands. These are stacked together to create a single RGB image. Finally, we visualize the raw satellite imagery using plotRGB to ensure it loaded correctly.
+```{r load_imagery, echo=TRUE}
+# Load RGB bands of satellite imagery
+r = raster::raster("LC09_L1TP_115066_20240713_20240713_02_T1/LC09_L1TP_115066_20240713_20240713_02_T1_B2.TIF")
+g = raster::raster("LC09_L1TP_115066_20240713_20240713_02_T1/LC09_L1TP_115066_20240713_20240713_02_T1_B3.TIF")
+b = raster::raster("LC09_L1TP_115066_20240713_20240713_02_T1/LC09_L1TP_115066_20240713_20240713_02_T1_B4.TIF")
+
+# Stack bands to form an RGB image
+imagery = raster::stack(r, g, b)
+
+# Visualize
+raster::plotRGB(imagery, scale=255^2)
+```
+
+
+## Correct Imagery
+To improve the appearance of the satellite imagery, we apply a gamma correction. This adjusts the brightness and contrast to better match human perception. We use the square root transformation to achieve this and visualize the corrected result.
+```{r correct, echo=TRUE}
+# Apply gamma correction to brighten the imagery
+imagery_corrected <- sqrt(raster::stack(r, g, b))
+
+# Visualize 
+raster::plotRGB(imagery_corrected)
+```
+
+
+## Check and Align Coordinate Reference Systems (CRS)
+Our elevation data uses a geographic CRS (latitude/longitude), while the imagery uses a projected CRS (UTM). To align them, we transform the elevation data to match the CRS of the imagery.
+```{r crs, echo=TRUE}
+# Check CRS of the imagery
+raster::crs(r)
+
+# Check CRS of the elevation data
+raster::crs(elevation)
+
+# Transform elevation data to match imagery's CRS
+elevation_utm <- raster::projectRaster(elevation, crs = crs(r), method = "bilinear")
+```
+
+
+## Crop Data to the Region of Interest
+Using the bounding box of the area of interest, we crop both the elevation and imagery datasets. This ensures that all data is aligned spatially and focuses only on the target region.
+```{r boundary, echo=TRUE}
+# Define bounding box for the region of interest (ROI)
+top_right <- c(x = 118.1023, y = -8.13384)
+bottom_left <- c(x = 117.8759, y = -8.360502)
+
+# Convert bounding box to UTM and crop the datasets
+extent_latlong <- sp::SpatialPoints(rbind(bottom_left, top_right), proj4string = sp::CRS("+proj=longlat"))
+extent_utm <- sp::spTransform(extent_latlong, raster::crs(elevation_utm))
+
+e <- raster::extent(extent_utm)
+
+# Crop datasets to the ROI
+imagery_cropped <- raster::crop(imagery_corrected, e)
+elevation_cropped <- raster::crop(elevation_utm, e)
+
+```
+
+
+## 3D Viz
+
+### Prepare Data for 3D Visualization
+Now, we convert the cropped elevation and imagery datasets into formats suitable for 3D plotting. The elevation data is converted to a matrix, while the RGB imagery is processed into a normalized array.
+```{r prepare_3d_viz, echo=TRUE}
+# Convert elevation to a matrix
+el_matrix <- rayshader::raster_to_matrix(elevation_cropped)
+
+# Prepare RGB imagery as a normalized array
+r_cropped <- rayshader::raster_to_matrix(imagery_cropped[[1]])
+g_cropped <- rayshader::raster_to_matrix(imagery_cropped[[2]])
+b_cropped <- rayshader::raster_to_matrix(imagery_cropped[[3]])
+
+imagery_array <- array(0, dim = c(nrow(r_cropped), ncol(r_cropped), 3))
+imagery_array[,,1] <- r_cropped / 255
+imagery_array[,,2] <- g_cropped / 255
+imagery_array[,,3] <- b_cropped / 255
+
+imagery_array = aperm(imagery_array, c(2,1,3))
+imagery_contrast = scales::rescale(imagery_array, to=c(0,1))
+
+plot_map(imagery_contrast)
+```
+```{r prepare_imagery_as_array, echo=TRUE}
+# Prepare the imagery as an RGB array
+if (inherits(imagery_contrast, "RasterStack") || inherits(imagery_contrast, "RasterBrick")) {
+  r <- rayshader::raster_to_matrix(imagery_contrast[[1]])
+  g <- rayshader::raster_to_matrix(imagery_contrast[[2]])
+  b <- rayshader::raster_to_matrix(imagery_contrast[[3]])
+  
+  # Create RGB array for rayshader
+  imagery_array <- array(0, dim = c(nrow(r), ncol(r), 3))
+  imagery_array[,,1] <- r / max(r)
+  imagery_array[,,2] <- g / max(g)
+  imagery_array[,,3] <- b / max(b)
+} else {
+  imagery_array <- imagery_contrast  # Use directly if already in RGB array format
+}
+```
+
+### Adjust Imagry Brightness and Contrast
+We use a custom function to adjust the brightness and contrast of the imagery array. This ensures the 3D visualization has clear and vibrant colors.
+```{r adjust_appearance, echo=TRUE}
+# Adjust brightness and contrast for the imagery array
+# Define a brightness and contrast adjustment function
+adjust_brightness_contrast <- function(img, brightness = 1, contrast = 1) {
+  img <- img * contrast  
+  img <- img + (brightness - 1)  
+  img <- pmin(pmax(img, 0), 1)  # Ensure values stay within [0, 1]
+  return(img)
+}
+
+# Convert the elevation matrix to a matrix if it is not already
+if (inherits(el_matrix, "RasterLayer")) {
+  elevation_matrix <- raster_to_matrix(el_matrix)
+} else {
+  elevation_matrix <- el_matrix  # Use directly if already a matrix
+}
+
+# Prepare the imagery as an RGB array
+if (inherits(imagery_contrast, "RasterStack") || inherits(imagery_contrast, "RasterBrick")) {
+  r <- rayshader::raster_to_matrix(imagery_contrast[[1]])
+  g <- rayshader::raster_to_matrix(imagery_contrast[[2]])
+  b <- rayshader::raster_to_matrix(imagery_contrast[[3]])
+  
+  # Create RGB array for rayshader
+  imagery_array <- array(0, dim = c(nrow(r), ncol(r), 3))
+  imagery_array[,,1] <- r / max(r)
+  imagery_array[,,2] <- g / max(g)
+  imagery_array[,,3] <- b / max(b)
+} else {
+  imagery_array <- imagery_contrast  # Use directly if already in RGB array format
+}
+
+# Adjust brightness and contrast for the imagery array
+imagery_array <- adjust_brightness_contrast(imagery_array, brightness = 1, contrast = 2.5)
+
+plot_map(imagery_array)
+```
+
+### Add Shadows and Ambient Shading
+To enhance the 3D model's realism, we add shadow and ambient shading layers based on the elevation matrix. These are combined with the imagery to create the final map.
+```{r shadow_ambient, echo=TRUE}
+# Generate shadow and ambient layers
+shadow_layer <- ray_shade(el_matrix, zscale = 15, lambert = TRUE)
+ambient_layer <- ambient_shade(el_matrix, zscale = 15)
+
+# Combine imagery with shading
+combined_map <- height_shade(el_matrix) %>%
+  add_overlay(imagery_array, alphalayer = 0.8) %>%
+  add_shadow(shadow_layer, 0.25) %>%
+  add_shadow(ambient_layer, 0.15)
+```
+
+### Render the 3D Plot
+Finally, we create a 3D plot of Mount Tambora using the combined map and elevation data. The render_snapshot function includes a description of the site.
+```{r render, echo=TRUE}
+# Plot 3D map
+plot_3d(
+  combined_map, el_matrix, 
+  zscale = 12, fov = 0, theta = -45, phi = 45,
+  windowsize = c(1000, 800), zoom = 0.75,
+  baseshape = 'circle'
+)
+
+render_highquality(filename = "output/3d_tambora_base.png", clear = TRUE)
+```
+
+### Annotation
+```{r}
+# Load the rendered 3D image
+image_3d <- image_read("output/3d_tambora_base.png")
+
+# Export to PNG using ragg
+agg_png("output/3D_Tambora_Annotated.png", width = 1000, height = 800, res = 144)
+
+# Start a new plot
+grid.newpage()
+grid.raster(image_3d)
+
+# Overlay Title
+grid.text(
+  "Tambora Volcano", 
+  x = unit(0.03, "npc"), y = unit(0.93, "npc"), 
+  just = "left", gp = gpar(fontfamily = "merriweather", fontsize = 41, col = "#333333", fontface = "bold")
+)
+
+# Overlay Subtitle
+grid.text(
+  "Located on Indonesia's Sumbawa Island, Mount Tambora erupted in 1815, marking the largest volcanic event\nin recorded history. The explosion caused thousands of deaths and disrupted global weather, leading to the\n'Year Without a Summer' in 1816, characterized by widespread crop failures and food shortages worldwide.",
+  x = unit(0.03, "npc"), y = unit(0.85, "npc"), 
+  just = "left", gp = gpar(fontfamily = "sans", fontsize = 14, col = "#555555", lineheight=0.6)
+)
+
+# Overlay Data Source
+grid.text(
+  "Data Source: USGS, URS Earthdata NASA \nby Godfried Junio Matahelemual", 
+  x = unit(0.975, "npc"), y = unit(0.05, "npc"), 
+  just = "right", gp = gpar(fontfamily = "sans", fontsize = 10, col = "#777777", lineheight=0.5)
+)
+
+# Close the device to save the file
+dev.off()
+
+```
+
+### Display result
+```{r display_result, echo=TRUE}
+# Load the image
+annotated_image <- png::readPNG("output/3D_Tambora_Annotated.png")
+
+# Display the final result
+grid.newpage()
+grid.raster(annotated_image)
+```
+
+
+
+## References:
+- https://www.tylermw.com/posts/data_visualization/a-step-by-step-guide-to-making-3d-maps-with-satellite-imagery-in-r.html
