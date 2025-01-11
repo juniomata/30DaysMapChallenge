@@ -212,7 +212,7 @@ Finally, we create a 3D plot of Mount Tambora using the combined map and elevati
 plot_3d(
   combined_map, el_matrix, 
   zscale = 12, fov = 0, theta = -45, phi = 45,
-  windowsize = c(1000, 800), zoom = 0.75,
+  windowsize = c(3000, 2400), zoom = 0.75,
   baseshape = 'circle'
 )
 
@@ -225,31 +225,32 @@ render_highquality(filename = "output/3d_tambora_base.png", clear = TRUE)
 image_3d <- image_read("output/3d_tambora_base.png")
 
 # Export to PNG using ragg
-agg_png("output/3D_Tambora_Annotated.png", width = 1000, height = 800, res = 144)
+agg_png("output/3D_Tambora_Annotated.png", width = 3000, height = 1835, res = 300)
 
 # Start a new plot
 grid.newpage()
-grid.raster(image_3d)
+grid.rect(gp = gpar(fill = NA, col = NA)) 
+grid.raster(image_3d) #overlay 3d
 
 # Overlay Title
 grid.text(
   "Tambora Volcano", 
-  x = unit(0.03, "npc"), y = unit(0.93, "npc"), 
-  just = "left", gp = gpar(fontfamily = "merriweather", fontsize = 41, col = "#333333", fontface = "bold")
+  x = unit(0.03, "npc"), y = unit(0.95, "npc"), 
+  just = "left", gp = gpar(fontfamily = "merriweather", fontsize = 70, col = "#333333", fontface = "bold")
 )
 
 # Overlay Subtitle
 grid.text(
   "Located on Indonesia's Sumbawa Island, Mount Tambora erupted in 1815, marking the largest volcanic event\nin recorded history. The explosion caused thousands of deaths and disrupted global weather, leading to the\n'Year Without a Summer' in 1816, characterized by widespread crop failures and food shortages worldwide.",
-  x = unit(0.03, "npc"), y = unit(0.85, "npc"), 
-  just = "left", gp = gpar(fontfamily = "sans", fontsize = 14, col = "#555555", lineheight=0.6)
+  x = unit(0.03, "npc"), y = unit(0.865, "npc"), 
+  just = "left", gp = gpar(fontfamily = "sans", fontsize = 42.5, col = "#555555", lineheight=0.3)
 )
 
 # Overlay Data Source
 grid.text(
-  "Data Source: USGS, URS Earthdata NASA \nby Godfried Junio Matahelemual", 
+  "Data Source: USGS, URS Earthdata NASA \n© Godfried Junio Matahelemual", 
   x = unit(0.975, "npc"), y = unit(0.05, "npc"), 
-  just = "right", gp = gpar(fontfamily = "sans", fontsize = 10, col = "#777777", lineheight=0.5)
+  just = "right", gp = gpar(fontfamily = "sans", fontsize = 25, col = "#777", lineheight=0.3)
 )
 
 # Close the device to save the file
