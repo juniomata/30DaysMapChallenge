@@ -1,0 +1,226 @@
+---
+title: "Circular Map"
+output: 
+  html_document:
+    toc: true
+    toc_float: 
+      collapsed: false
+      smooth_scroll: true
+    code_folding: show
+date: "2025-01-07"
+---
+
+# Jakarta Circular Map
+
+## Setup
+```{r setup, echo=TRUE}
+# install.packages(c("rayshader", "raster", "sp"))
+library(osmdata)
+library(sf) 
+library(dplyr) 
+library(ggplot2)
+library(magick)
+library(sysfonts)
+library(showtext)
+library(grid)
+library(ragg)
+
+font_add_google("Merriweather", "merriweather")
+font_add_google("Playfair Display", "playfair")
+font_add_google("Lora", "lora")
+font_add_google("Arvo", "arvo")
+font_add_google("Lato", "lato", regular.wt = 100)
+showtext_auto()
+```
+
+
+## Load Data
+```{r load_data, echo=TRUE}
+# Bounding box for Jakarta (modify as needed for specific areas)
+min_lon <- 106.75
+max_lon <- 106.90
+min_lat <- -6.13
+max_lat <- -6.23
+ 
+bbox <- c(min_lon, min_lat, max_lon, max_lat)
+
+# Base query for Jakarta
+jakarta <- opq(bbox = bbox)
+
+# Pull water features
+jakarta_water <- jakarta %>%
+  add_osm_feature(key = "natural", value = "water") %>%
+  osmdata_sf()
+
+# Pull road features
+jakarta_roads <- jakarta %>%
+  add_osm_feature(key = "highway") %>%
+  osmdata_sf()
+
+# Pull green spaces
+jakarta_parks <- jakarta %>%
+  add_osm_feature(key = "leisure", value = "park") %>%
+  osmdata_sf()
+```
+
+
+```{r}
+# Fix invalid geometries
+jakarta_parks$osm_polygons <- st_make_valid(jakarta_parks$osm_polygons)
+jakarta_parks$osm_multipolygons <- st_make_valid(jakarta_parks$osm_multipolygons)
+jakarta_roads$osm_multipolygons <- st_make_valid(jakarta_roads$osm_multipolygons)
+```
+
+
+## Process Layer
+```{r process, echo=TRUE}
+# Roads categorized into pedestrian, minor, and main
+pedestrian <- jakarta_roads$osm_lines %>%
+  filter(highway %in% c("footway", "track", "path"))
+
+minor_roads <- jakarta_roads$osm_lines %>%
+  filter(highway %in% c("residential", "tertiary", "secondary"))
+
+main_roads <- jakarta_roads$osm_lines %>%
+  filter(highway %in% c("primary", "trunk"))
+
+# Simplify water and park layers
+jakarta_water_sf <- st_union(jakarta_water$osm_polygons, jakarta_water$osm_multipolygons)
+jakarta_parks_sf <- st_union(jakarta_parks$osm_polygons, jakarta_parks$osm_multipolygons)
+jakarta_roads_sf <- st_union(jakarta_roads$osm_polygons, jakarta_roads$osm_multipolygons)
+```
+
+## Viz Map
+```{r viz, echo=TRUE}
+# Define colors
+background_fill <- "#FFF"   
+water_fill <- "#B3DDEE" #"#28A7F5"
+park_fill <-  "#CFEFD7"  #"#56C7AD"
+road_color <- "#767C83" #"#656A70"
+
+# Plot map
+jakarta_map <- ggplot() +
+  geom_sf(data = jakarta_water_sf, fill = water_fill, color = NA) +
+  geom_sf(data = jakarta_parks_sf, fill = park_fill, color = NA) +
+  geom_sf(data = pedestrian, color = road_color, linewidth = 0.1, alpha = 0.4) +
+  geom_sf(data = minor_roads, color = road_color, linewidth = 0.25, alpha = 0.6) +
+  geom_sf(data = main_roads, color = road_color, linewidth = 0.4) +
+  coord_sf(xlim = c(min_lon, max_lon), ylim = c(min_lat, max_lat), expand = FALSE) +
+  theme_void() +
+  theme(panel.background = element_rect(fill = background_fill, color = NA))
+
+# Save as PNG
+ggsave("jakarta_map.png", plot = jakarta_map, width = 10, height = 10, dpi = 300, units = "in")
+
+# Display map
+print(jakarta_map)
+```
+
+
+## Circular Mask
+```{r crs, echo=TRUE}
+# Define midpoint and radius for the circle
+lat <- -6.1867
+lon <- 106.8283
+r <- 5000      # Radius in meters (5 km)
+
+# kebon sirih: -6.186670, 106.828333
+# Monas: -6.175, 106.827
+
+# Create circular mask
+midpoint <- st_point(c(lon, lat)) %>% st_sfc(crs = 4326)
+circle_mask <- st_buffer(midpoint %>% st_transform(crs = 3857), dist = r) %>%
+  st_transform(crs = 4326)
+
+# Ensure all layers are in the same projected CRS
+crs_projected <- 3857
+jakarta_water_sf <- jakarta_water_sf %>% st_transform(crs_projected)
+jakarta_parks_sf <- jakarta_parks_sf %>% st_transform(crs_projected)
+jakarta_roads_sf <- jakarta_roads_sf %>% st_transform(crs_projected)
+pedestrian <- pedestrian %>% st_transform(crs_projected)
+minor_roads <- minor_roads %>% st_transform(crs_projected)
+main_roads <- main_roads %>% st_transform(crs_projected)
+circle_mask <- circle_mask %>% st_transform(crs_projected)
+
+# Combine roads and mask layers
+water_masked <- st_intersection(jakarta_water_sf, circle_mask)
+parks_masked <- st_intersection(jakarta_parks_sf, circle_mask)
+pedestrian_masked <- pedestrian %>% st_intersection(circle_mask)
+minor_road_masked <- minor_roads %>% st_intersection(circle_mask)
+main_roads_masked <- main_roads %>% st_intersection(circle_mask)
+
+# Create the circular map
+jakarta_circular_map <- ggplot() +
+  geom_sf(data = circle_mask, fill = background_fill, color = NA) +
+  geom_sf(data = water_masked, fill = water_fill, color = NA) +
+  geom_sf(data = parks_masked, fill = park_fill, color = NA) +
+  geom_sf(data = pedestrian_masked, color= road_color, linewidth = .1, alpha = .3, )+
+  geom_sf(data = minor_road_masked, color = road_color, linewidth = .2, alpha = .7, )+
+  geom_sf(data = main_roads_masked, color= road_color, linewidth = .5, )+
+  theme_void()
+
+# Save the circular map
+ggsave("jakarta_circular_map.png", plot = jakarta_circular_map, width = 10, height = 10, dpi = 300, units = "in")
+
+# Display
+jakarta_circular_map
+```
+
+## Annotate
+```{r annotate, echo=TRUE}
+# Load the circular map as an image
+jakarta_map_image <- image_read("jakarta_circular_map.png")
+
+# Set up the output PNG file using ragg
+agg_png("jakarta_circular_map_annotated.png", width = 4000, height = 4000, res = 300)
+
+# Start a new grid plot
+grid.newpage()
+grid.rect(gp = gpar(fill = "#FFFFFF", col = NA)) # Background fill
+# grid.raster(jakarta_map_image) # Overlay the map image
+
+# Resize and position the map (smaller size with more whitespace)
+grid.raster(
+  jakarta_map_image, 
+  x = unit(0.5, "npc"), y = unit(0.525, "npc"), 
+  width = unit(0.75, "npc"), height = unit(0.75, "npc") # Resize map to 70% of the canvas
+)
+
+# Overlay Title
+grid.text(
+  "JAKARTA", 
+  x = unit(0.5, "npc"), y = unit(0.925, "npc"), # Position at the middle top
+  just = "center", gp = gpar(fontfamily = "lato", fontsize = 250, col = "#333333", fontface = "plain")
+)
+
+# Overlay Coordinates
+grid.text(
+  "6°10'3''S 106°49'39''E", 
+  x = unit(0.5, "npc"), y = unit(0.15, "npc"), # Position below the map
+  just = "center", gp = gpar(fontfamily = "lato", fontsize = 150, col = "#333333", fontface = "plain")
+)
+
+# Overlay Data Attribution
+grid.text(
+  "Data: OpenStreetMap \n© 2025 Godfried Junio Matahelemual \n#30DaysMapChallenge", 
+  x = unit(0.975, "npc"), y = unit(0.05, "npc"), # Position at the bottom right
+  just = "right", gp = gpar(fontfamily = "sans", fontsize = 41, col = "#AAA", lineheight = 0.3)
+)
+
+# Close the device to save the file
+dev.off()
+```
+
+```{r display, echo=TRUE}
+# Load the annotated image
+annotated_map <- image_read("jakarta_circular_map_annotated.png")
+
+# Display the annotated map
+grid.newpage()
+grid.raster(annotated_map)
+```
+
+
+
+## References:
+- https://blog.devgenius.io/design-a-map-art-with-r-and-openstreetmap-eac6fc7a912b
