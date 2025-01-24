@@ -21,28 +21,28 @@ I will update this repository with my code, workflows, and insights gathered thr
 **EV Charging stations**  
 Mapping the distribution of EV charging stations across NYC to analyze accessibility. This visualization helps identify charging deserts and potential areas for new installations.
 
-![](https://github.com/juniomata/30DaysMapChallenge/tree/main/day01_points/)
+![points](https://github.com/juniomata/30DaysMapChallenge/tree/main/day01_points/)
 
 ## 2 Lines
 
 **Kalimantan River network**  
 A detailed mapping of the river networks in Kalimantan using HydroSheds data. This project focuses on understanding water flow and connectivity, which is crucial for ecological studies and water management.
 
-![](https://github.com/juniomata/30DaysMapChallenge/tree/main/day02_lines/finalmap_kalimantan_river_network_annotated.png)
+![lines](https://github.com/juniomata/30DaysMapChallenge/blob/main/day02_lines/finalmap_kalimantan_river_network_annotated.png)
 
 ## 3 Polygons
 
 **Display energy usage across NYC**  
 A comprehensive visualization of energy consumption across NYC neighborhoods, using data from the NYC Department of Buildings.
 
-![](https://github.com/juniomata/30DaysMapChallenge/tree/main/day03_polygon/day3_polygon_energy-water-use.png)  
+![polygons](https://github.com/juniomata/30DaysMapChallenge/tree/main/day03_polygon/day3_polygon_energy-water-use.png)  
 
 ## 4 Hexagons
 
 **Hex map of NYC Trees**  
 A hexagonal grid representation of NYC tree distribution using data from NYC Open Data.
 
-![](https://github.com/juniomata/30DaysMapChallenge/tree/main/day04_hexagon/finalmap_street_trees_nyc_hexagons.png)
+![Hexagons](https://github.com/juniomata/30DaysMapChallenge/tree/main/day04_hexagon/finalmap_street_trees_nyc_hexagons.png)
 
 
 ## 5 A Journey
@@ -50,14 +50,14 @@ A hexagonal grid representation of NYC tree distribution using data from NYC Ope
 **Climate Migration patterns in the U.S**  
 Analyzing climate-induced migration trends across the U.S., leveraging FEMA data.
 
-![](https://github.com/juniomata/30DaysMapChallenge/tree/main/day05_journey/)
+![Journey](https://github.com/juniomata/30DaysMapChallenge/tree/main/day05_journey/)
 
 ## 6 Raster
 
 **Deforestation**  
 Using satellite data to visualize deforestation patterns in South Sumatra, sourced from Hansen/UMD/Google/USGS/NASA.
 
-![](https://github.com/juniomata/30DaysMapChallenge/tree/main/day06_raster/figures/finalmap_south_sumatra_forest_loss.png)
+![Raster](https://github.com/juniomata/30DaysMapChallenge/tree/main/day06_raster/figures/finalmap_south_sumatra_forest_loss.png)
 
 
 ## 7 Vintage Style
@@ -65,7 +65,7 @@ Using satellite data to visualize deforestation patterns in South Sumatra, sourc
 **Indonesia ring of fire**  
 A vintage-style map showcasing Indonesia's volcanic activity, inspired by historical cartography techniques.
 
-![](https://github.com/juniomata/30DaysMapChallenge/tree/main/day07_vintage/IndonesiaRingofFire.png)
+![Vintage](https://github.com/juniomata/30DaysMapChallenge/tree/main/day07_vintage/IndonesiaRingofFire.png)
 
 
 ## 8 Humanitarian Data Exchange (HDX)
@@ -73,7 +73,7 @@ A vintage-style map showcasing Indonesia's volcanic activity, inspired by histor
 **California Fire**  
 Mapping wildfire impacts across California using HDX data.
 
-![](https://github.com/juniomata/30DaysMapChallenge/tree/main/day08_hdx)
+![HDX](https://github.com/juniomata/30DaysMapChallenge/tree/main/day08_hdx)
 
 
 ## 9 AI Only
@@ -81,7 +81,7 @@ Mapping wildfire impacts across California using HDX data.
 **Public transport connecting all NP**  
 Exploring AI-driven solutions for public transport connectivity across national parks.
 
-![](https://github.com/juniomata/30DaysMapChallenge/tree/main/day09_aionly/day9_ai_noly_publictransporttoNP.png)
+![AI](https://github.com/juniomata/30DaysMapChallenge/tree/main/day09_aionly/day9_ai_noly_publictransporttoNP.png)
 
 
 ## 10 Pen & Paper
@@ -89,14 +89,14 @@ Exploring AI-driven solutions for public transport connectivity across national 
 **Country with Major Cities**  
 A hand-drawn map visualizing major cities of a chosen country.
 
-![](https://github.com/juniomata/30DaysMapChallenge/tree/main/day10_penpaper)
+![Pen](https://github.com/juniomata/30DaysMapChallenge/tree/main/day10_penpaper)
 
 ## 11 Arctic
 
 **Map Arctic ice extent changes over time**  
 Tracking the retreat of Arctic ice over time to understand climate change effects.
 
-![](https://github.com/juniomata/30DaysMapChallenge/tree/main/day11_arctic/day11_Arctic_SeaIceExtent.gif)
+![Arctic](https://github.com/juniomata/30DaysMapChallenge/tree/main/day11_arctic/day11_Arctic_SeaIceExtent.gif)
 
 
 ## 12 Time and Space
@@ -104,7 +104,7 @@ Tracking the retreat of Arctic ice over time to understand climate change effect
 **Land cover change Jabodetabek**  
 Mapping urban expansion in Jabodetabek over time.
 
-![](https://github.com/juniomata/30DaysMapChallenge/tree/main/day12_timeandspace/LandCover_Changes_Jabodetabek.jpg)
+![TimeSpace](https://github.com/juniomata/30DaysMapChallenge/tree/main/day12_timeandspace/LandCover_Changes_Jabodetabek.jpg)
 
 
 ## 13 A New Tool
@@ -112,7 +112,7 @@ Mapping urban expansion in Jabodetabek over time.
 **3D Forest Height Maps with AerialOD**  
 Exploring new 3D mapping tools for visualization.
 
-![](https://github.com/juniomata/30DaysMapChallenge/tree/main/day13_newtool/)
+![NewTool](https://github.com/juniomata/30DaysMapChallenge/tree/main/day13_newtool/)
 
 
 ## 14 A World Map
@@ -120,7 +120,7 @@ Exploring new 3D mapping tools for visualization.
 **World temperature anomaly 2024 vs 1900-2000**  
 Mapping global temperature changes over time.
 
-![](https://github.com/juniomata/30DaysMapChallenge/tree/main/day14_worldmap/temperature_anomalies_2024_dark.png)
+![world](https://github.com/juniomata/30DaysMapChallenge/tree/main/day14_worldmap/temperature_anomalies_2024_dark.png)
 
 
 ## 15 My Data
@@ -128,7 +128,7 @@ Mapping global temperature changes over time.
 **Grand canyon trekking**  
 Mapping trekking routes and elevation changes in the Grand Canyon.
 
-![](https://github.com/juniomata/30DaysMapChallenge/tree/main/day15_mydata)
+![mydata](https://github.com/juniomata/30DaysMapChallenge/tree/main/day15_mydata)
 
 
 ## 16 Choropleth
@@ -136,14 +136,14 @@ Mapping trekking routes and elevation changes in the Grand Canyon.
 **Most threatening disaster in each county**  
 A choropleth visualization highlighting disaster-prone areas across counties in the U.S.
 
-![](https://github.com/juniomata/30DaysMapChallenge/tree/main/day16_choropleth)
+![Choropleth](https://github.com/juniomata/30DaysMapChallenge/tree/main/day16_choropleth)
 
 ## 17 Collaborative Map
 
 **NYC Walkability**  
 A collaborative project analyzing walkability across NYC.
 
-![](https://github.com/juniomata/30DaysMapChallenge/tree/main/day17_collaborative/finalmap_NYC_Walkability_Index.png)
+![Collaborative](https://github.com/juniomata/30DaysMapChallenge/tree/main/day17_collaborative/finalmap_NYC_Walkability_Index.png)
 
 
 ## 18 3D
@@ -151,14 +151,14 @@ A collaborative project analyzing walkability across NYC.
 **Tambora**  
 A 3D representation of Tambora volcano using topographic data.
 
-![](https://github.com/juniomata/30DaysMapChallenge/tree/main/day18_3d/3d_Tambora_Annotated.png)
+![3D](https://github.com/juniomata/30DaysMapChallenge/tree/main/day18_3d/3d_Tambora_Annotated.png)
 
 ## 19 Typography
 
 **Text-based map of NY climate resilience plans**  
 A typographic visualization of climate resilience initiatives.
 
-![](https://github.com/juniomata/30DaysMapChallenge/tree/main/day19_wordcloud/day19_wordcloud_nyClimateActionPlan.png)
+![Typography](https://github.com/juniomata/30DaysMapChallenge/tree/main/day19_wordcloud/day19_wordcloud_nyClimateActionPlan.png)
 
 
 ## 20 OpenStreetMap
@@ -166,7 +166,7 @@ A typographic visualization of climate resilience initiatives.
 **Jakarta Circular Map**  
 A circular map of Jakarta using OpenStreetMap data.
 
-![](https://github.com/juniomata/30DaysMapChallenge/tree/main/day20_osm/finalmap_jakarta_circular_map_annotated.png)
+![OSM](https://github.com/juniomata/30DaysMapChallenge/tree/main/day20_osm/finalmap_jakarta_circular_map_annotated.png)
 
 
 ## 21 Conflict
@@ -174,7 +174,7 @@ A circular map of Jakarta using OpenStreetMap data.
 **Orangutan vs deforestation**  
 Mapping the conflict between orangutan habitats and deforestation activities.
 
-![](https://github.com/juniomata/30DaysMapChallenge/tree/main/day21_conflict/Day 21 - Conflict Map - Orangutan vs Deforestation.png)
+![Conflict](https://github.com/juniomata/30DaysMapChallenge/tree/main/day21_conflict/Day 21 - Conflict Map - Orangutan vs Deforestation.png)
 
 
 ## 22 Two Colours
@@ -182,14 +182,14 @@ Mapping the conflict between orangutan habitats and deforestation activities.
 **Jakarta Road Circular Map Black and White**  
 A minimalist black and white circular map of Jakarta roads.
 
-![](https://github.com/juniomata/30DaysMapChallenge/tree/main/day22_twocolours/figures/finalmap_jakarta_roads_circular_map_annotated.png)
+![TwoColours](https://github.com/juniomata/30DaysMapChallenge/tree/main/day22_twocolours/figures/finalmap_jakarta_roads_circular_map_annotated.png)
 
 ## 23 Memory
 
 **Where flood mitigation projects were implemented**  
 Tracking locations where flood mitigation efforts took place.
 
-![](https://github.com/juniomata/30DaysMapChallenge/tree/main/day23_memory)
+![Memory](https://github.com/juniomata/30DaysMapChallenge/tree/main/day23_memory)
 
 
 ## 24 Only Circular Shapes
@@ -197,14 +197,14 @@ Tracking locations where flood mitigation efforts took place.
 **Manhattan boundary formed by a circle**  
 Experimenting with circular visualizations of Manhattan.
 
-![](https://github.com/juniomata/30DaysMapChallenge/tree/main/day24_onlycircular/day24_CircularShapes_ManhattanBoundary (2).png)
+![Circular](https://github.com/juniomata/30DaysMapChallenge/tree/main/day24_onlycircular/day24_CircularShapes_ManhattanBoundary (2).png)
 
 ## 25 Heat
 
 **Land Surface Temperature (LST)**  
 Analyzing temperature variations across urban areas.
 
-![](https://github.com/juniomata/30DaysMapChallenge/tree/main/day25_heat)
+![Heat](https://github.com/juniomata/30DaysMapChallenge/tree/main/day25_heat)
 
 
 ## 26 Map Projections
@@ -212,7 +212,7 @@ Analyzing temperature variations across urban areas.
 **Copernicus Climate Data Visualization**  
 Exploring different map projections for climate data.
 
-![](https://github.com/juniomata/30DaysMapChallenge/tree/main/day26_mapprojections)
+![Projections](https://github.com/juniomata/30DaysMapChallenge/tree/main/day26_mapprojections)
 
 
 ## 27 Micromapping
@@ -220,7 +220,7 @@ Exploring different map projections for climate data.
 **SCBD 3D (Kyle Walker)**  
 Creating a detailed 3D micromap of SCBD.
 
-![](https://github.com/juniomata/30DaysMapChallenge/tree/main/day27_micromapping)
+![Micromapping](https://github.com/juniomata/30DaysMapChallenge/tree/main/day27_micromapping)
 
 
 ## 28 The Blue Planet
@@ -228,7 +228,7 @@ Creating a detailed 3D micromap of SCBD.
 **River REM**  
 Mapping the Mississippi River's environmental impact.
 
-![](https://github.com/juniomata/30DaysMapChallenge/tree/main/day28_blueplanet/day28_mississippi_rem.png)
+![Blue](https://github.com/juniomata/30DaysMapChallenge/tree/main/day28_blueplanet/day28_mississippi_rem.png)
 
 
 ## 29 Overture
@@ -236,7 +236,7 @@ Mapping the Mississippi River's environmental impact.
 **3D Buildings**  
 Showcasing 3D building visualizations in various urban areas.
 
-![](https://github.com/juniomata/30DaysMapChallenge/tree/main/day29_overture/day29_jakarta_overture_buildings.gif)
+![Overture](https://github.com/juniomata/30DaysMapChallenge/tree/main/day29_overture/day29_jakarta_overture_buildings.gif)
 
 
 ## 30 The Final Map
@@ -244,7 +244,7 @@ Showcasing 3D building visualizations in various urban areas.
 **Compilations of where I finished the map**  
 A summary visualization of all maps completed during the challenge.
 
-![](https://github.com/juniomata/30DaysMapChallenge/tree/main/day30_final)
+![Final](https://github.com/juniomata/30DaysMapChallenge/tree/main/day30_final)
 
 
 ## Contact
