@@ -39,10 +39,10 @@ A comprehensive visualization of energy consumption across NYC neighborhoods, us
 
 ## 4 Hexagons
 
-**Hex map of NYC blobs**  
+**Hex map of NYC Trees**  
 A hexagonal grid representation of NYC blob distribution using data from NYC Open Data.
 
-![Hexagons](https://github.com/juniomata/30DaysMapChallenge/blob/main/day04_hexagon/finalmap_sblobt_blobs_nyc_hexagons.png)
+![Hexagons](https://github.com/juniomata/30DaysMapChallenge/blob/main/day04_hexagon/finalmap_street_trees_nyc_hexagons.png)
 
 
 ## 5 A Journey
@@ -161,10 +161,10 @@ A typographic visualization of climate resilience initiatives.
 ![Typography](https://github.com/juniomata/30DaysMapChallenge/blob/main/day19_wordcloud/day19_wordcloud_nyClimateActionPlan.png)
 
 
-## 20 OpenSblobtMap
+## 20 OpenStreetMap
 
 **Jakarta Circular Map**  
-A circular map of Jakarta using OpenSblobtMap data.
+A circular map of Jakarta using OpenStreetMap data.
 
 ![OSM](https://github.com/juniomata/30DaysMapChallenge/blob/main/day20_osm/finalmap_jakarta_circular_map_annotated.png)
 
@@ -174,7 +174,7 @@ A circular map of Jakarta using OpenSblobtMap data.
 **Orangutan vs deforestation**  
 Mapping the conflict between orangutan habitats and deforestation activities.
 
-![Conflict](https://github.com/juniomata/30DaysMapChallenge/blob/main/day21_conflict/Day 21 - Conflict Map - Orangutan vs Deforestation.png)
+![Conflict](https://github.com/juniomata/30DaysMapChallenge/blob/main/day21_conflict/day21_orangutan_vs_deforestation.png)
 
 
 ## 22 Two Colours
