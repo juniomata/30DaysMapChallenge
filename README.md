@@ -197,14 +197,14 @@ Tracking locations where flood mitigation efforts took place.
 **Manhattan boundary formed by a circle**  
 Experimenting with circular visualizations of Manhattan.
 
-![Circular](https://github.com/juniomata/30DaysMapChallenge/blob/main/day24_onlycircular/day24_CircularShapes_ManhattanBoundary (2).png)
+![Circular](https://github.com/juniomata/30DaysMapChallenge/blob/main/day24_onlycircular/day24_CircularShapes_ManhattanBoundary.png)
 
 ## 25 Heat
 
 **Land Surface Temperature (LST)**  
 Analyzing temperature variations across urban areas.
 
-![Heat](https://github.com/juniomata/30DaysMapChallenge/blob/main/day25_heat)
+![Heat](https://github.com/juniomata/30DaysMapChallenge/blob/main/day25_heat/day25_heat_jakartaLST.gif)
 
 
 ## 26 Map Projections
