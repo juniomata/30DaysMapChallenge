@@ -20,7 +20,7 @@ I will update this repository with my code, workflows, and insights gathered thr
 
 ## 1. Points
 
-**EV Charging stations**  
+**EV Charging Stations**  
 Mapping the distribution of EV charging stations across NYC to analyze accessibility. This visualization helps identify charging deserts and potential areas for new installations.
 
 ![points](day01_points/)
@@ -44,7 +44,7 @@ Understanding the relationship between energy and water consumption is crucial f
 
 ## 4. Hexagons
 
-**Hex map of NYC Trees**  
+**Hex Map of NYC Trees**  
 This time, I visualized the distribution of street trees across New York City using a hexagonal grid. The data, sourced from [NYC Open Data](https://data.cityofnewyork.us/Environment/2015-Street-Tree-Census-Tree-Data/uvpi-gqnh/about_data), provides insights into areas with high and low tree density. This hex map helps reveal patterns of urban greenery, showcasing how tree coverage varies across different boroughs.
 
 <div style="text-align: center;"><img src="day04_hexagon/finalmap_street_trees_nyc_hexagons.png" style="width:50%;"></div>
@@ -52,7 +52,7 @@ This time, I visualized the distribution of street trees across New York City us
 
 ## 5. A Journey
 
-**Climate Migration patterns in the U.S**  
+**Climate Migration Patterns in the U.S**  
 As climate change increasingly influences migration patterns, I wanted to explore its impact across the U.S. This map visualizes migration trends influenced by climate events, offering insights into how communities are adapting to environmental changes.
 
 <div style="text-align: center;"><img src="day05_journey/" style="width:50%;"></div>
@@ -126,14 +126,14 @@ Using data from [NASA GISS](https://data.giss.nasa.gov//gistemp/maps/), I tried 
 
 ## 15. My Data
 
-**Grand canyon trekking**  
+**Grand Canyon Trekking**  
 Mapping trekking routes and elevation changes in the Grand Canyon.
 
 <div style="text-align: center;"><img src="mydata" style="width:50%;"></div>
 
 ## 16. Choropleth
 
-**Most threatening disaster in each county**  
+**Most Threatening Disaster in Each County**  
 A choropleth visualization highlighting disaster-prone areas across counties in the U.S.
 
 <div style="text-align: center;"><img src="day16_choropleth" style="width:50%;"></div>
@@ -169,7 +169,7 @@ This minimalist circular map of Jakarta, the capital of Indonesia, showcases the
 
 ## 21. Conflict
 
-**Orangutan vs deforestation**  
+**Orangutan vs Deforestation**  
 Seeing the impact of deforestation on orangutan habitats in Sumatra and Borneo inspired me to create this map using geospatial data and satellite imagery. It highlights the alarming overlap between critical habitats and deforestation activities such as palm oil plantations and logging. This visualization serves as a call to action for conservation efforts and sustainable land-use policies to protect these endangered primates and their rapidly disappearing forests.
 
 <div style="text-align: center;"><img src="day21_conflict/day21_orangutan_vs_deforestation.png" style="width:50%;"></div>
@@ -183,7 +183,7 @@ For Day 22, I created this minimalist black-and-white circular map of Jakarta’
 
 ## 23. Memory
 
-**Where flood mitigation projects were implemented**  
+**Where Flood Mitigation Projects were Implemented**  
 Tracking locations where flood mitigation efforts took place.
 
 <div style="text-align: center;"><img src="day23_memory" style="width:50%;"></div>
@@ -211,7 +211,7 @@ Exploring different map projections for climate data.
 
 ## 27. Micromapping
 
-**SCBD 3D (Kyle Walker)**  
+**SCBD 3D**  
 Creating a detailed 3D micromap of SCBD.
 
 <div style="text-align: center;"><img src="day27_micromapping" style="width:50%;"></div>
@@ -232,7 +232,7 @@ Again, this is my first time using Overture data. I used R to create a 3D visual
 
 ## 30. The Final Map
 
-**Compilations of where I finished the map**  
+**Compilations of Where I Finished Each Map**  
 A summary visualization of all maps completed during the challenge.
 
 <div style="text-align: center;"><img src="day30_final" style="width:50%;"></div>
