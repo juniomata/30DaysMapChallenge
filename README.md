@@ -193,7 +193,7 @@ Tracking locations where flood mitigation efforts took place.
 **Manhattan Boundary Formed by a Circle**  
 For Day 24, I experimented with creating a unique visualization of Manhattan's boundary using only circular shapes. This minimalist design reimagines the iconic shape of the borough through a series of evenly spaced circles.
 
-<div style="text-align: center;"><img src="day24_onlycircular/day24_CircularShapes_ManhattanBoundary.png" style="width:50%;"></div>
+<div style="text-align: center;"><img src="day24_OnlyCircular/day24_CircularShapes_ManhattanBoundary.png" style="width:50%;"></div>
 
 ## 25. Heat
 
