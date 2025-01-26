@@ -69,7 +69,7 @@ Having seen the alarming deforestation rates in South Sumatra, I wanted to shed 
 ## 7. Vintage Style
 
 **Indonesia Ring of Fire**  
-Indonesia’s volcanic activity has always intrigued me, and I wanted to present it in a vintage cartographic style. This map captures the seismic activity of the region while paying homage to classic cartography techniques.
+Indonesia’s volcanic activity has always intrigued me, and I wanted to present it in a vintage cartographic style. This map captures the seismic activity of the region while paying homage to classic cartography techniques. Explore the interactive visualization here: [Indonesia Ring of Fire](https://public.tableau.com/app/profile/junio.mata/viz/IndonesiaRingofFire_17312940926410/Dashboard1?publish=yes).
 
 <div style="text-align: center;"><img src="day07_vintage/IndonesiaRingofFire.png" style="width:50%;"></div>
 
