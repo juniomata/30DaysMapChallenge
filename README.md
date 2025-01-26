@@ -7,13 +7,13 @@ This challenge is a great opportunity to enhance my spatial data visualization s
 
 I will update this repository with my code, workflows, and insights gathered throughout the challenge.
 
-| Tool         | Usage Count |
+| Tools         | Map Count |
 |--------------|-------------|
 | Python       | 7           |
 | R            | 5           |
 | ArcGIS       | 4           |
 | Tableau      | 3           |
-| Google Earth Engine | 1    |
+| Google Earth Engine | 2    |
 | DALL-E       | 1           |
 
 
@@ -29,7 +29,7 @@ Mapping the distribution of EV charging stations across NYC to analyze accessibi
 ## 2. Lines
 
 **Kalimantan River Network**  
-I have always been fascinated by the intricate river systems that sustain life and connect remote areas. This map meticulously traces the river networks of Kalimantan using HydroSheds by Spatial Thoughts. Rivers of the same color indicate those that originate from a common main river.
+I have always been fascinated by the intricate river systems that sustain life and connect remote areas. This map meticulously traces the river networks of Borneo/Kalimantan (Indonesia side) using HydroSheds by [Spatial Thoughts](https://courses.spatialthoughts.com/python-dataviz.html#overview-6). Rivers of the same color indicate those that originate from a common main river.
 
 <div style="text-align: center;"><img src="day02_lines/finalmap_kalimantan_river_network_annotated.png" style="width:50%;"></div>
 
@@ -45,7 +45,7 @@ Understanding the relationship between energy and water consumption is crucial f
 ## 4. Hexagons
 
 **Hex map of NYC Trees**  
-A hexagonal grid representation of NYC blob distribution using data from NYC Open Data.
+This time, I visualized the distribution of street trees across New York City using a hexagonal grid. The data, sourced from [NYC Open Data](https://data.cityofnewyork.us/Environment/2015-Street-Tree-Census-Tree-Data/uvpi-gqnh/about_data), provides insights into areas with high and low tree density. This hex map helps reveal patterns of urban greenery, showcasing how tree coverage varies across different boroughs.
 
 <div style="text-align: center;"><img src="day04_hexagon/finalmap_street_trees_nyc_hexagons.png" style="width:50%;"></div>
 
@@ -83,8 +83,8 @@ Mapping wildfire impacts across California using HDX data.
 
 ## 9. AI Only
 
-**Public transport connecting all NP**  
-Exploring AI-driven solutions for public transport connectivity across national parks.
+**What if Public Transport Connected All US National Parks?**  
+I often wish for an easier way to visit national parks without the hassle of long drives. This AI-generated map imagines a future where eco-friendly buses, high-speed trains, and scenic routes connect all US national parks, making travel more accessible and sustainable. Creating this map was challenging. I struggled to refine the AI prompt to remove unnecessary text and accurately place park locations. Despite the hurdles, it’s exciting to think about a greener future. Until then, I’ll keep driving and dreaming!
 
 <div style="text-align: center;"><img src="day09_aionly/day9_ai_noly_publictransporttoNP.png" style="width:50%;"></div>
 
@@ -97,15 +97,15 @@ A hand-drawn map visualizing major cities of a chosen country.
 
 ## 11. Arctic
 
-**Map Arctic ice extent changes over time**  
+**Map Arctic Ice Extent Changes Over Time**  
 For day 11, I created an animated map showcasing the changes in Arctic ice extent from 1980 to 2020 at 10-year intervals. Inspired by [John Nelson's cartographic techniques](https://www.youtube.com/watch?v=iT4JOSUm7yE&t=286s), I aimed to visualize the changes of Arctic ice changes in a compelling and informative way.
 
 <div style="text-align: center;"><img src="day11_arctic/day11_Arctic_SeaIceExtent.gif" style="width:50%;"></div>
 
 ## 12. Time and Space
 
-**Land Cover Change Jabodetabek**  
-Mapping urban expansion in Jabodetabek over time.
+**Land Cover Change in Jabodetabek**  
+Having grown up near Jakarta, I’ve always been aware of how rapidly the city has expanded, with once lush green areas gradually turning into concrete landscapes. This visualization captures the transformation of the Jabodetabek region over the past three decades, showing the relentless urban sprawl and shrinking natural green coverage.
 
 <div style="text-align: center;"><img src="day12_timeandspace/LandCover_Changes_Jabodetabek.jpg" style="width:50%;"></div>
 
@@ -120,9 +120,9 @@ Exploring new 3D mapping tools for visualization.
 ## 14. A World Map
 
 **World Temperature Anomaly 2024 vs 1900-2000**  
-Using data from [Mapping global temperature changes over time.](https://data.giss.nasa.gov//gistemp/maps/), I tried to illustrate the stark reality of climate change by comparing global temperature anomalies between 2024 and the 1900-2000 baseline. 
+Using data from [NASA GISS](https://data.giss.nasa.gov//gistemp/maps/), I tried to illustrate the reality of climate change by comparing global temperature average between 2024 and the 1900-2000 baseline. 
 
-<div style="text-align: center;"><img src="day14_worldmap/temperature_anomalies_2024_dark.png" style="width:50%;"></div>
+<div style="text-align: center;"><img src="day14_worldMap/temperature_anomalies_2024_dark.png" style="width:50%;"></div>
 
 ## 15. My Data
 
@@ -165,7 +165,7 @@ This word cloud visualizes key themes and priorities from the New York State Cli
 **Jakarta Circular Map**  
 This minimalist circular map of Jakarta, the capital of Indonesia, showcases the city's road network, waterways, and green spaces using OpenStreetMap data. With subtle colors and precise lines, it offers a fresh, modern perspective on Jakarta’s urban layout, complemented by geographic coordinates for added context.
 
-<div style="text-align: center;"><img src="day20_osm/finalmap_jakarta_circular_map_annotated.png" style="width:50%;"></div>
+<div style="text-align: center;"><img src="day20_OSM/finalmap_jakarta_circular_map_annotated.png" style="width:50%;"></div>
 
 ## 21. Conflict
 
@@ -226,7 +226,7 @@ For Day 28 of Blue Planet, I chose to visualize a river. I explored the Mississi
 ## 29. Overture
 
 **Jakarta 3D Buildings**  
-Again, this is my first time using Overture data. I'm using R to create a 3D visualization of Jakarta, the capital of Indonesia. This project allowed me to explore the complexities of Jakarta's urban landscape, focusing on the SCBD (Sudirman Central Business District) area, one of the city's most prominent financial hubs. The visualization showcases Jakarta’s intricate skyline, with notable landmarks such as the National Monument (Monas) visible to the north of the CBD.  While I noticed that some high-rise buildings may be missing from the dataset, Overture provides a valuable resource for capturing building heights, particularly in Global South cities where such data can be scarce. Let’s wait for the next data update to see how it evolves!
+Again, this is my first time using Overture data. I used R to create a 3D visualization of Jakarta, the capital of Indonesia. This project allowed me to explore the complexities of Jakarta's urban landscape. This map reveals how high-rise buildings are densely concentrated in the SCBD (Sudirman Central Business District) area, one of the city's most prominent financial hubs. While I noticed that some high-rise buildings may be missing from the dataset, Overture provides a valuable resource for capturing building heights, particularly in Global South cities where such data can be scarce. Let’s wait for the next data update to see how it evolves! Check out the interactive map here: [Jakarta Overture Buildings](https://juniomata.github.io/portfolio/jakarta_overture_buildings.html)
 
 <div style="text-align: center;"><img src="day29_overture/day29_jakarta_overture_buildings.gif" style="width:50%;"></div>
 
