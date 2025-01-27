@@ -21,7 +21,7 @@ It’s been a tough but incredibly fun journey that introduced me to various new
 ## 1. Points
 
 **North America Renewable Energy Plants**  
-Day 1 of my 30-Day Map Challenge marks the beginning of my very first map in this challenge experience. I explored the distribution of renewable energy power plants across North America, showcasing various energy sources like solar, wind, and hydro. It’s thrilling to kick off this challenge with such an impactful topic!
+This map marks the exciting start of my first-ever 30-Day Map Challenge experience. I explored the distribution of renewable energy power plants across North America, highlighting key energy sources such as solar, wind, and hydro. The data used for this visualization comes from [Esri Canada](https://esricanada.maps.arcgis.com/home/item.html?id=96102cac5134489a8c69aa81931d8604). It’s nice to kick off this challenge with such an interesting topic! Check out the interactive map here: [North America Renewable Energy Plants](https://juniomata.github.io/portfolio/renewableplants.html)
 
 <div style="text-align: center;"><img src="day01_points\day1_renewableplants.png" style="width:50%;"></div>
 
@@ -149,14 +149,14 @@ For the collaborative map, I created the NYC Walkability Index with Ismail Rasha
 ## 18. 3D
 
 **3D Tambora Volcano**  
-I created a 3D visualization of Mount Tambora, one of Indonesia's most famous volcanoes, using topographic data derived from Digital Elevation Models (DEM) and Landsat satellite imagery. Inspired by Tyler Morgan-Wall's ([tutorial](https://www.tylermw.com/posts/data_visualization/a-step-by-step-guide-to-making-3d-maps-with-satellite-imagery-in-r.html)), this map highlights the caldera and surrounding terrain that shows insights into the volcano's structure and historical significance.
+I created a 3D visualization of Mount Tambora, one of Indonesia's most famous volcanoes, using topographic data derived from Digital Elevation Models (DEM) and Landsat satellite imagery. Inspired by [Tyler Morgan-Wall's tutorial](https://www.tylermw.com/posts/data_visualization/a-step-by-step-guide-to-making-3d-maps-with-satellite-imagery-in-r.html), this map highlights the caldera and surrounding terrain that shows insights into the volcano's structure and historical significance.
 
 <div style="text-align: center;"><img src="day18_3D/output/3d_Tambora_Annotated.png" style="width:50%;"></div>
 
 ## 19. Typography
 
-**Text-based Map of NY State Climate Action Council Scoping Plan**  
-This word cloud visualizes key themes and priorities from the New York State Climate Action Council Scoping Plan 2022. Using a typographic approach, it highlights the most frequently mentioned terms, such as “program,” “support,” “community,” and “climate action,” reflecting the state’s focus on sustainability, emissions reduction, and community engagement. The varying font sizes represent the frequency of words in the document, providing insights into the policy’s emphasis on disadvantaged communities, energy efficiency, and greenhouse gas reductions.
+**Word Cloud Map of NY State Climate Action Council Scoping Plan**  
+This word cloud visualizes key themes and priorities from the New York State Climate Action Council Scoping Plan 2022. Using a typographic approach, it highlights the most frequently mentioned terms, such as “program,” “support,” “community,” and “climate action,” that reflects the state’s focus on sustainability, emissions reduction, and community engagement. The varying font sizes represent the frequency of words in the document, providing insights into the policy’s emphasis on disadvantaged communities, energy efficiency, and greenhouse gas reductions.
 
 <div style="text-align: center;"><img src="day19_wordcloud/day19_wordcloud_nyClimateActionPlan.png" style="width:50%;"></div>
 
@@ -219,7 +219,7 @@ Creating a detailed 3D micromap of SCBD.
 ## 28. The Blue Planet
 
 **Mississippi River Relative Elevation Model (REM)**  
-For Day 28 of Blue Planet, I chose to visualize a river. I explored the Mississippi River that crosses Arkansas using a Relative Elevation Model (REM) to visualize its topography and surrounding landscapes. This is my first time creating this kind of visualization, and I followed Daniel Jahn's ([notebook](https://github.com/DahnJ/REM-xarray)). It was challenging but fun to try!
+For Day 28 of Blue Planet, I chose to visualize a river. I explored the Mississippi River that crosses Arkansas using a Relative Elevation Model (REM) to visualize its topography and surrounding landscapes. This is my first time creating this kind of visualization, and I followed [Daniel Jahn's notebook](https://colab.research.google.com/github/DahnJ/REM-xarray/blob/master/rem-in-xarray-tutorial.ipynb). It was challenging but fun to try!
 
 <div style="text-align: center;"><img src="day28_blueplanet/day28_mississippi_rem.png" style="width:50%;"></div>
 
