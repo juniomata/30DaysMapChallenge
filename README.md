@@ -3,13 +3,13 @@
 
 Welcome to my contributions to the 2024 #30DayMapChallenge!
 
-This challenge is a great opportunity to enhance my spatial data visualization skills by creating and sharing maps based on daily themes throughout November. My focus will revolve around three areas I am passionate about: climate, energy, and sustainability. Each map will reflect creative approaches and various mapping techniques using tools like QGIS, Python, and R.
+This challenge is an exciting opportunity for me to enhance my spatial data visualization skills by creating and sharing maps based on daily themes, initiated by [Topi Tjukanov](https://30daymapchallenge.com/). Although I joined a bit late, my enthusiasm never diminished! This is my first time completing all 30 maps, and I can't wait for the next challenge. 
 
-I will update this repository with my code, workflows, and insights gathered throughout the challenge.
+It’s been a tough but incredibly fun journey that introduced me to various new mapping techniques and fascinating datasets. My focus revolves around three areas I am passionate about: 🌍climate, ⚡energy, and 🌱sustainability.
 
-| Tools         | Map Count |
+| Tools        | Map Count |
 |--------------|-------------|
-| Python       | 7           |
+| Python       | 8           |
 | R            | 5           |
 | ArcGIS       | 4           |
 | Tableau      | 3           |
