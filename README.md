@@ -20,8 +20,8 @@ I will update this repository with my code, workflows, and insights gathered thr
 
 ## 1. Points
 
-**EV Charging Stations**  
-Mapping the distribution of EV charging stations across NYC to analyze accessibility. This visualization helps identify charging deserts and potential areas for new installations.
+**North America Renewable Energy Plants**  
+Day 1 of my 30-Day Map Challenge marks the beginning of my very first map in this challenge experience. I explored the distribution of renewable energy power plants across North America, showcasing various energy sources like solar, wind, and hydro. It’s thrilling to kick off this challenge with such an impactful topic!
 
 <div style="text-align: center;"><img src="day01_points\day1_renewableplants.png" style="width:50%;"></div>
 
