@@ -11,7 +11,7 @@ It’s been a tough but incredibly fun journey that introduced me to various new
 |--------------|-------------|
 | Python       | 8           |
 | R            | 5           |
-| ArcGIS       | 4           |
+| ArcGIS       | 5           |
 | Tableau      | 3           |
 | Google Earth Engine | 2    |
 | DALL-E       | 1           |
@@ -21,7 +21,7 @@ It’s been a tough but incredibly fun journey that introduced me to various new
 ## 1. Points
 
 **North America Renewable Energy Plants**  
-This map marks the exciting start of my first-ever 30-Day Map Challenge experience. I explored the distribution of renewable energy power plants across North America, highlighting key energy sources such as solar, wind, and hydro. The data used for this visualization comes from [Esri Canada](https://esricanada.maps.arcgis.com/home/item.html?id=96102cac5134489a8c69aa81931d8604). It’s nice to kick off this challenge with such an interesting topic! Check out the interactive map here: [North America Renewable Energy Plants](https://juniomata.github.io/portfolio/renewableplants.html)
+This map marks the exciting start of my first-ever 30-Day Map Challenge experience. I explored the distribution of renewable energy power plants across North America that highlights key energy sources such as solar, wind, and hydro. The data used for this visualization comes from [Esri Canada](https://esricanada.maps.arcgis.com/home/item.html?id=96102cac5134489a8c69aa81931d8604). It’s nice to kick off this challenge with such an interesting topic! Check out the interactive map here: [North America Renewable Energy Plants](https://juniomata.github.io/portfolio/renewableplants.html)
 
 <div style="text-align: center;"><img src="day01_points\day1_renewableplants.png" style="width:50%;"></div>
 
@@ -211,10 +211,13 @@ Exploring different map projections for climate data.
 
 ## 27. Micromapping
 
-**SCBD 3D**  
-Creating a detailed 3D micromap of SCBD.
+**3D Visualization of Buildings in Belle Isle, Miami Beach (Sea Level Rise Impact)**  
+Day 27 is here, and I decided to zoom in on Belle Isle in Miami Beach, Florida. Using ArcGIS Pro, I put together detailed 3D visualizations of the island’s buildings to capture a small area with high accuracy. 
+To make things more interesting, I explored the potential impacts of sea level rise, using data from NOAA and ArcGIS Living Atlas. 
+I mapped out sea level rise scenarios for 2030, 2050, and 2090 to provide useful insights for future planning in this coastal community. 
+To create this map, I followed the [ESRI Academy GIS for Climate Action MOOC](https://www.esri.com/training/catalog/645d6a07eb82fb767bb0c012/gis-for-climate-action/).
 
-<div style="text-align: center;"><img src="day27_micromapping" style="width:50%;"></div>
+<div style="text-align: center;"><img src="day27_micromapping\day27_3DBuildingsMiamiBeach.gif" style="width:50%;"></div>
 
 ## 28. The Blue Planet
 
