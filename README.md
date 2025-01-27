@@ -23,7 +23,7 @@ I will update this repository with my code, workflows, and insights gathered thr
 **EV Charging Stations**  
 Mapping the distribution of EV charging stations across NYC to analyze accessibility. This visualization helps identify charging deserts and potential areas for new installations.
 
-![points](day01_points/)
+<div style="text-align: center;"><img src="day01_points\day1_renewableplants.png" style="width:50%;"></div>
 
 
 ## 2. Lines
