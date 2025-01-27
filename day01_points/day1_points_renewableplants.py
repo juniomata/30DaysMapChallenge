@@ -45,13 +45,14 @@ nb = NaturalBreaks(gdf["Renew_MW"], k=5)
 gdf["size_class"] = pd.cut(gdf["Renew_MW"], bins=nb.bins, labels=[3, 7, 10, 15], include_lowest=True)
 
 # Create the folium map with CartoDB Dark Matter basemap centered at 39°50′N 98°35′W
-m = folium.Map(location=[39.833333, -98.583333], zoom_start=4, tiles="CartoDB dark_matter")
+m = folium.Map(location=[39.833333, -98.583333], zoom_start=4.5, tiles="CartoDB dark_matter")
 
 # Add title
 title_html = '<h3 style="position: fixed; top: 10px; left: 50%; transform: translateX(-50%); z-index:99999; background-color: rgba(255, 255, 255, 0.7); padding: 10px; border-radius: 5px;">North America Renewable Energy Plants</h3>'
 m.get_root().html.add_child(folium.Element(title_html))
 
 # Add points to the map with thinner borders
+popup = f"Facility: {row['Facility']}<br>Capacity: {row['Renew_MW']} MW<br>Energy Source: {row['PrimRenew']}<br>Owner: {row['Owner']}<br>City: {row['City']}<br>State/Province: {row['StateProv']}"
 for _, row in gdf.iterrows():
     folium.CircleMarker(
         location=(row["Latitude"], row["Longitude"]),
@@ -61,7 +62,7 @@ for _, row in gdf.iterrows():
         fill=True,
         fill_color=custom_color_map.get(row["PrimRenew"], default_color),
         fill_opacity=0.55,
-        popup=folium.Popup(f"Facility: {row['Facility']}<br>Capacity: {row['Renew_MW']} MW<br>Energy Source: {row['PrimRenew']}", max_width=450)
+        popup=folium.Popup(popup, max_width=450)
     ).add_to(m)
 
 # Add collapsible legend
