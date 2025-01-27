@@ -120,7 +120,7 @@ Exploring new 3D mapping tools for visualization.
 ## 14. A World Map
 
 **World Temperature Anomaly 2024 vs 1900-2000**  
-Using data from [NASA GISS](https://data.giss.nasa.gov//gistemp/maps/), I tried to illustrate the reality of climate change by comparing global temperature average between 2024 and the 1900-2000 baseline. 
+Using data from [NASA GISS](https://data.giss.nasa.gov//gistemp/maps/), I tried to illustrate the reality of climate change by comparing global temperature average between 2024 and the 1900-2000 baseline. This map reveals that the north region stands out as the most affected area, with temperature anomalies surpassing 4°C
 
 <div style="text-align: center;"><img src="day14_worldMap/temperature_anomalies_2024_dark.png" style="width:50%;"></div>
 
