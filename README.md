@@ -5,7 +5,7 @@ Welcome to my contributions to the 2024 #30DayMapChallenge!
 
 This challenge is an exciting opportunity for me to enhance my spatial data visualization skills by creating and sharing maps based on daily themes, initiated by [Topi Tjukanov](https://30daymapchallenge.com/). Although I joined a bit late, my enthusiasm never diminished! This is my first time completing all 30 maps, and I can't wait for the next challenge. 
 
-It’s been a tough but incredibly fun journey that introduced me to various new mapping techniques and fascinating datasets. My focus revolves around three areas I am passionate about: 🌍climate, ⚡energy, and 🌱sustainability.
+It’s been a tough but incredibly fun journey that introduced me to various new mapping techniques and fascinating datasets. My focus revolves around three areas I am passionate about: 🌍climate, ⚡energy, ♻️sustainability, and 🌱environment.
 
 You can explore my daily map contributions covering a variety of themes such as [Points](#1-points), [Lines](#2-lines), [Polygons](#3-polygons), [Hexagons](#4-hexagons), [A Journey](#5-a-journey), [Raster](#6-raster), [Vintage Style](#7-vintage-style), [Humanitarian Data Exchange (HDX)](#8-humanitarian-data-exchange-hdx), [AI Only](#9-ai-only), [Pen & Paper](#10-pen--paper), [Arctic](#11-arctic), [Time and Space](#12-time-and-space), [A New Tool](#13-a-new-tool), [A World Map](#14-a-world-map), [My Data](#15-my-data), [Choropleth](#16-choropleth), [Collaborative Map](#17-collaborative-map), [3D](#18-3d), [Typography](#19-typography), [OpenStreetMap](#20-openstreetmap), [Conflict](#21-conflict), [Two Colours](#22-two-colours), [Memory](#23-memory), [Only Circular Shapes](#24-only-circular-shapes), [Heat](#25-heat), [Map Projections](#26-map-projections), [Micromapping](#27-micromapping), [The Blue Planet](#28-the-blue-planet), [Overture](#29-overture), and [The Final Map](#30-the-final-map). Scroll through to discover all 30 creative maps!
 
@@ -32,7 +32,7 @@ This map marks the exciting start of my first-ever 30-Day Map Challenge experien
 ## 2. Lines
 
 **Kalimantan River Network**  
-I have always been fascinated by the intricate river systems that sustain life and connect remote areas. This map meticulously traces the river networks of Borneo/Kalimantan (Indonesia side) using HydroSheds by [Spatial Thoughts](https://courses.spatialthoughts.com/python-dataviz.html#overview-6). Rivers of the same color indicate those that originate from a common main river.
+I have always been fascinated by the intricate river systems that sustain life and connect remote areas. This map traces the river networks of Borneo/Kalimantan (Indonesia side) using HydroSheds by [Spatial Thoughts](https://courses.spatialthoughts.com/python-dataviz.html#overview-6). Rivers of the same color indicate those that originate from a common main river.
 
 <div style="text-align: center;"><img src="day02_lines/finalmap_kalimantan_river_network_annotated.png" style="width:70%;"></div>
 
@@ -64,7 +64,7 @@ As climate change increasingly influences migration patterns, I wanted to explor
 ## 6. Raster
 
 **South Sumatra Forest Loss**  
-Having seen the alarming deforestation rates in South Sumatra, I wanted to shed light on this pressing issue. Using  data from Hansen/UMD/Google/USGS/NASA, this map highlights deforestation patterns and serves as a call to action for sustainable land management.
+Having seen the alarming deforestation rates in South Sumatra, I wanted to shed light on this pressing issue. Using  data from Hansen/UMD/Google/USGS/NASA, this map highlights deforestation patterns and serves as a call to action for sustainable land management. Thanks to Milos Popovic for the [wonderful tutorial](https://www.youtube.com/watch?v=wruLRZZpQsk&t=681s)!
 
 <div style="text-align: center;"><img src="day06_raster/figures/finalmap_south_sumatra_forest_loss.png" style="width:70%;"></div>
 
@@ -123,7 +123,7 @@ Exploring new 3D mapping tools for visualization.
 ## 14. A World Map
 
 **World Temperature Anomaly 2024 vs 1900-2000**  
-Using data from [NASA GISS](https://data.giss.nasa.gov//gistemp/maps/), I tried to illustrate the reality of climate change by comparing global temperature average between 2024 and the 1900-2000 baseline. This map reveals that the north region stands out as the most affected area, with temperature anomalies surpassing 4°C
+Using data from [NASA GISS](https://data.giss.nasa.gov//gistemp/maps/), I tried to illustrate the reality of climate change by comparing global temperature average between 2024 and the 1900-2000 baseline. This map reveals that the north region stands out as the most affected area, with temperature anomalies surpassing 4°C. Credits to [Himalaya](https://towardsdatascience.com/assessing-global-temperature-anomaly-using-nasas-space-studies-part-ii-29e5e313a7b3).
 
 <div style="text-align: center;"><img src="day14_worldMap/temperature_anomalies_2024_dark.png" style="width:70%;"></div>
 
@@ -159,7 +159,7 @@ I created a 3D visualization of Mount Tambora, one of Indonesia's most famous vo
 ## 19. Typography
 
 **Word Cloud Map of NY State Climate Action Council Scoping Plan**  
-This word cloud visualizes key themes and priorities from the New York State Climate Action Council Scoping Plan 2022. Using a typographic approach, it highlights the most frequently mentioned terms, such as “program,” “support,” “community,” and “climate action,” that reflects the state’s focus on sustainability, emissions reduction, and community engagement. The varying font sizes represent the frequency of words in the document, providing insights into the policy’s emphasis on disadvantaged communities, energy efficiency, and greenhouse gas reductions.
+This word cloud visualizes key words from the [New York State Climate Action Council Scoping Plan 2022](https://climate.ny.gov/-/media/Project/Climate/Files/NYS-Climate-Action-Council-Final-Scoping-Plan-2022.pdf). Using a typographic approach, it highlights the most frequently mentioned terms, such as “program”, “support”, “ghg emissions”, and “climate act”, that reflects the state’s focus on sustainability, emissions reduction, and community engagement. The varying font sizes represent the frequency of words in the document that provide insights into the policy’s emphasis on disadvantaged communities, energy efficiency, and greenhouse gas reductions.
 
 <div style="text-align: center;"><img src="day19_wordcloud/day19_wordcloud_nyClimateActionPlan.png" style="width:70%;"></div>
 
@@ -173,7 +173,7 @@ This minimalist circular map of Jakarta, the capital of Indonesia, showcases the
 ## 21. Conflict
 
 **Orangutan vs Deforestation**  
-Seeing the impact of deforestation on orangutan habitats in Sumatra and Borneo inspired me to create this map using geospatial data and satellite imagery. It highlights the alarming overlap between critical habitats and deforestation activities such as palm oil plantations and logging. This visualization serves as a call to action for conservation efforts and sustainable land-use policies to protect these endangered primates and their rapidly disappearing forests.
+This map is inspired by [Christina Shintani's work](https://www.shintanimaps.com/?pgid=lza7xvhk-509dc6be-8166-4103-8651-5b14676c8875) and my desire to recreate it. Utilizing deforestation data from [GLAD Laboratory](https://storage.googleapis.com/earthenginepartners-hansen/GFC-2023-v1.11/download.html) and Orangutan ranges from IUCN, this map highlights the critical overlap between orangutan habitats and deforestation activities, including palm oil plantations and logging.
 
 <div style="text-align: center;"><img src="day21_conflict/day21_orangutan_vs_deforestation.png" style="width:70%;"></div>
 
@@ -194,7 +194,7 @@ Tracking locations where flood mitigation efforts took place.
 ## 24. Only Circular Shapes
 
 **Manhattan Boundary Formed by a Circle**  
-For Day 24, I experimented with creating a unique visualization of Manhattan's boundary using only circular shapes. This minimalist design reimagines the iconic shape of the borough through a series of evenly spaced circles.
+This was probably one of the toughest topics. I had to really think outside the box since the challenge was to make a map using only circular shapes. I ended up creating a visualization of Manhattan's boundary entirely out of circles and even using a font made of dots/circle. Honestly, I’m a bit shocked at how creative I can be, and I absolutely love how it turned out!
 
 <div style="text-align: center;"><img src="day24_OnlyCircular/day24_CircularShapes_ManhattanBoundary.png" style="width:50%;"></div>
 
@@ -207,10 +207,10 @@ For Day 25, I mapped Jakarta's land surface temperature using Landsat data proce
 
 ## 26. Map Projections
 
-**Copernicus Climate Data Visualization**  
-Exploring different map projections for climate data.
+**Global Temperature Anomalies with Pre-Industrial as Baseline (with Different Map Projections)**  
+Using the same data source as Day 14, I mapped global temperature anomalies by comparing average temperatures from the past 20 years (2004-2024) with the pre-industrial era (1880–1900). This time, I broke it down by seasons and applied different map projections for each one with the help of the Cartopy Python library. The maps reveal that temperatures across all seasons in the last 20 years mostly show a rise compared to the pre-industrial era, which may reflect the impact of industrial activities.
 
-<div style="text-align: center;"><img src="day26_mapprojections" style="width:70%;"></div>
+<div style="text-align: center;"><img src="day26_mapprojections\day26_nowadays_temp_anomalies_vs_preindustrial.png" style="width:70%;"></div>
 
 ## 27. Micromapping
 
@@ -233,7 +233,7 @@ For Day 28 of Blue Planet, I chose to visualize a river. I explored the Mississi
 ## 29. Overture
 
 **Jakarta 3D Buildings**  
-Again, this is my first time using Overture data. I used R to create a 3D visualization of Jakarta, the capital of Indonesia. This project allowed me to explore the complexities of Jakarta's urban landscape. This map reveals how high-rise buildings are densely concentrated in the SCBD (Sudirman Central Business District) area, one of the city's most prominent financial hubs. While I noticed that some high-rise buildings may be missing from the dataset, Overture provides a valuable resource for capturing building heights, particularly in Global South cities where such data can be scarce. Let’s wait for the next data update to see how it evolves! Check out the interactive map here: [Jakarta Overture Buildings](https://juniomata.github.io/portfolio/jakarta_overture_buildings.html)
+Again, this is my first time using Overture data. I used R to create a 3D visualization of Jakarta, the capital of Indonesia. This project allowed me to explore the complexities of Jakarta's urban landscape. This map reveals how high-rise buildings are densely concentrated in the SCBD (Sudirman Central Business District) area, one of the city's most prominent financial hubs. While I noticed that some high-rise buildings may be missing from the dataset, Overture provides a valuable resource for capturing building heights, particularly in Global South cities where such data can be scarce. Let’s wait for the next data update to see how it evolves! Special thanks to Kyle Walker for his [easy-to-follow guide](https://walker-data.com/posts/overture-buildings/). Check out the interactive map here: [Jakarta Overture Buildings](https://juniomata.github.io/portfolio/jakarta_overture_buildings.html)
 
 <div style="text-align: center;"><img src="day29_overture/day29_jakarta_overture_buildings.gif" style="width:70%;"></div>
 
