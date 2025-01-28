@@ -3,18 +3,19 @@
 
 Welcome to my contributions to the 2024 #30DayMapChallenge!
 
-This challenge is an exciting opportunity for me to enhance my spatial data visualization skills by creating and sharing maps based on daily themes, initiated by [Topi Tjukanov](https://30daymapchallenge.com/). Although I joined a bit late, my enthusiasm never diminished! This is my first time completing all 30 maps, and I can't wait for the next challenge. 
+The [30-Day Map Challenge](https://30daymapchallenge.com/) is a challenge initiated by Topi Tjukanov that invites map makers to create and share maps based on daily themes. This is my very first time joining the challenge and it has been an exciting and rewarding experience for me. Although it was originally scheduled for November 2024, I started in early January 2025 and proudly completed all 30 maps by the end of the month!
 
-It’s been a tough but incredibly fun journey that introduced me to various new mapping techniques and fascinating datasets. My focus revolves around three areas I am passionate about: 🌍climate, ⚡energy, ♻️sustainability, and 🌱environment.
+It’s been a tough yet enjoyable journey that pushed me to try new mapping techniques and explore new data sources. My focus throughout has been on the areas I’m most passionate about: 🌍 climate, 🌱 environment, ♻️ sustainability, and ⚡ energy.
+
 
 You can explore my daily map contributions covering a variety of themes such as [Points](#1-points), [Lines](#2-lines), [Polygons](#3-polygons), [Hexagons](#4-hexagons), [A Journey](#5-a-journey), [Raster](#6-raster), [Vintage Style](#7-vintage-style), [Humanitarian Data Exchange (HDX)](#8-humanitarian-data-exchange-hdx), [AI Only](#9-ai-only), [Pen & Paper](#10-pen--paper), [Arctic](#11-arctic), [Time and Space](#12-time-and-space), [A New Tool](#13-a-new-tool), [A World Map](#14-a-world-map), [My Data](#15-my-data), [Choropleth](#16-choropleth), [Collaborative Map](#17-collaborative-map), [3D](#18-3d), [Typography](#19-typography), [OpenStreetMap](#20-openstreetmap), [Conflict](#21-conflict), [Two Colours](#22-two-colours), [Memory](#23-memory), [Only Circular Shapes](#24-only-circular-shapes), [Heat](#25-heat), [Map Projections](#26-map-projections), [Micromapping](#27-micromapping), [The Blue Planet](#28-the-blue-planet), [Overture](#29-overture), and [The Final Map](#30-the-final-map). Scroll through to discover all 30 creative maps!
 
-| Tools        | Map Count |
+| Tools        | Map Count   |
 |--------------|-------------|
-| Python       | 8           |
+| Python       | 10          |
 | R            | 5           |
 | ArcGIS       | 5           |
-| Tableau      | 3           |
+| Tableau      | 4           |
 | Google Earth Engine | 2    |
 | DALL-E       | 1           |
 | Pen & Paper  | 1           |
@@ -58,7 +59,7 @@ This time, I visualized the distribution of street trees across New York City us
 **Climate Migration Patterns in the U.S**  
 As climate change increasingly influences migration patterns, I wanted to explore its impact across the U.S. This map visualizes migration trends influenced by climate events that offers insights into how communities are adapting to environmental changes.
 
-<div style="text-align: center;"><img src="day05_journey/" style="width:70%;"></div>
+<div style="text-align: center;"><img src="day05_journey/day5_usmigrations.png" style="width:70%;"></div>
 
 
 ## 6. Raster
@@ -82,7 +83,7 @@ Indonesia’s volcanic activity has always intrigued me, and I wanted to present
 **California Fire**  
 Mapping wildfire impacts across California using HDX data.
 
-<div style="text-align: center;"><img src="day08_hdx" style="width:70%;"></div>
+<div style="text-align: center;"><img src="https://public.tableau.com/views/Accesstoelectricity_16161908637570/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" style="width:70%;"></div>
 
 ## 9. AI Only
 
@@ -125,7 +126,7 @@ Exploring new 3D mapping tools for visualization.
 **World Temperature Anomaly 2024 vs 1900-2000**  
 Using data from [NASA GISS](https://data.giss.nasa.gov//gistemp/maps/), I tried to illustrate the reality of climate change by comparing global temperature average between 2024 and the 1900-2000 baseline. This map reveals that the north region stands out as the most affected area, with temperature anomalies surpassing 4°C. Credits to [Himalaya](https://towardsdatascience.com/assessing-global-temperature-anomaly-using-nasas-space-studies-part-ii-29e5e313a7b3).
 
-<div style="text-align: center;"><img src="day14_worldmap/temperature_anomalies_2024_dark.png" style="width:70%;"></div>
+<div style="text-align: center;"><img src="day14_worldmap/temperature_anomalies_2024_dark.png" style="width:50%;"></div>
 
 ## 15. My Data
 
@@ -139,7 +140,7 @@ Mapping trekking routes and elevation changes in the Grand Canyon.
 **Most Threatening Disaster in Each County**  
 A choropleth visualization highlighting disaster-prone areas across counties in the U.S.
 
-<div style="text-align: center;"><img src="day16_choropleth" style="width:70%;"></div>
+<div style="text-align: center;"><img src="day16_choropleth/day16_usclimaterisk.png" style="width:70%;"></div>
 
 
 ## 17. Collaborative Map
