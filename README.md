@@ -80,10 +80,10 @@ Indonesia’s volcanic activity has always intrigued me, and I wanted to present
 
 ## 8. Humanitarian Data Exchange (HDX)
 
-**California Fire**  
-Mapping wildfire impacts across California using HDX data.
+**Access to Electricity**  
+For this theme, I revisited a visualization I created years ago. This map illustrates global access to electricity and highlights disparities across countries. It tracks progress toward Sustainable Development Goal 7 (Affordable and Clean Energy) by mapping the proportion of populations with access to electricity from 2000 to 2016. Check out the interactive visualization here: [Access to Electricty](https://public.tableau.com/app/profile/junio.mata/viz/Accesstoelectricity_16161908637570/Dashboard1)
 
-<div style="text-align: center;"><img src="https://public.tableau.com/views/Accesstoelectricity_16161908637570/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" style="width:70%;"></div>
+<div style="text-align: center;"><img src="day08_hdx\day8_electricityaccess.png" style="width:35%;"></div>
 
 ## 9. AI Only
 
