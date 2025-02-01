@@ -120,7 +120,6 @@ Exploring new 3D mapping tools for visualization.
 
 <div style="text-align: center;"><img src="day13_newtool/" style="width:70%;"></div>
 
-
 ## 14. A World Map
 
 **World Temperature Anomaly 2024 vs 1900-2000**  
@@ -187,10 +186,10 @@ For Day 22, I created this minimalist black-and-white circular map of Jakarta’
 
 ## 23. Memory
 
-**Where Flood Mitigation Projects were Implemented**  
-Tracking locations where flood mitigation efforts took place.
+**Memories of Lake Powell**  
+Some places just stay with you. For Day 23 (Memory), I mapped Lake Powell, one of the stops from my best-ever road trip last spring break. Driving through Utah and Arizona, visiting national parks, and witnessing breathtaking landscapes made for an incredible journey, and this lake was a standout. I mapped NDVI (vegetation), NDWI (water), and NDBI (built-up areas) to visualize how this stunning reservoir interacts with its surroundings. The water areas stand out in blue (higher NDWI), while vegetation appears green, and the lake itself shows minimal vegetation (red in NDVI).
 
-<div style="text-align: center;"><img src="day23_memory" style="width:70%;"></div>
+<div style="text-align: center;"><img src="day23_memory\day23_lakepowellmemory.gif" style="width:70%;"></div>
 
 ## 24. Only Circular Shapes
 
