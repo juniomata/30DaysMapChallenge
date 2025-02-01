@@ -115,10 +115,10 @@ Having grown up near Jakarta, I’ve always been aware of how rapidly the city h
 
 ## 13. A New Tool
 
-**3D Forest Height Maps with AerialOD**  
-Exploring new 3D mapping tools for visualization.
+**California Power Plant Risk to Climate**  
+Trying out new tools has been one of the best parts of this challenge! I built a real-time climate risk dashboard in CARTO, integrating live weather alerts to assess threats to power plants in California. With wildfires, extreme heat, and storms impacting energy infrastructure, proactive risk mapping is essential for a more resilient power grid. This was my first time working with CARTO, and I was impressed by how low-code spatial automation can generate real-time insights. [The final dashboard](https://clausa.app.carto.com/map/79d7ed11-fb2b-4a3b-8b59-b31c1115e8fd?lat=38.193442&lng=-122.385665&zoom=5) provides live alerts on how many and which power plants are at risk. Thanks to Gideon Singer and Helen McKenzie's tutorials!
 
-<div style="text-align: center;"><img src="day13_newtool/" style="width:70%;"></div>
+<div style="text-align: center;"><img src="day13_newtool\day13_powerplantsriskdashboard.gif/" style="width:70%;"></div>
 
 ## 14. A World Map
 
