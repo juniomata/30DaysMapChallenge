@@ -94,10 +94,10 @@ I often wish for an easier way to visit national parks without the hassle of lon
 
 ## 10. Pen & Paper
 
-**Alaska**  
-A hand-drawn map visualizing Alaska boundary.
+**Alaska by Hand**  
+It's Day 10, so I had to pull out my pen and paper for this one. I drew Alaska, the land of glaciers, permafrost, and energy shifts, where climate change reshapes landscapes. From melting ice to renewable energy, Alaska stands at the crossroads of environmental challenges and sustainability efforts. Pardon my bad calligraphy. I tried! 😆
 
-<div style="text-align: center;"><img src="day10" style="width:70%;"></div>
+<div style="text-align: center;"><img src="day10_penpaper\day10_alaskabyhand.jpg" style="width:70%;"></div>
 
 ## 11. Arctic
 
