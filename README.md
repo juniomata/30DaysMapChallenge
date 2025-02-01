@@ -12,11 +12,12 @@ You can explore my daily map contributions covering a variety of themes such as 
 
 | Tools        | Map Count   |
 |--------------|-------------|
-| Python       | 10          |
+| Python       | 11          |
 | R            | 5           |
 | ArcGIS       | 5           |
 | Tableau      | 4           |
-| Google Earth Engine | 2    |
+| Google Earth Engine | 3    |
+| Carto        | 1           |
 | DALL-E       | 1           |
 | Pen & Paper  | 1           |
 
