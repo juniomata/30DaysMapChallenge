@@ -15,7 +15,7 @@ You can explore my daily map contributions covering a variety of themes such as 
 | Python       | 11          |
 | R            | 5           |
 | ArcGIS       | 5           |
-| Tableau      | 4           |
+| Tableau      | 5           |
 | Google Earth Engine | 3    |
 | Carto        | 1           |
 | DALL-E       | 1           |
@@ -56,8 +56,8 @@ This time, I visualized the distribution of street trees across New York City us
 
 ## 5. A Journey
 
-**Climate Migration Patterns in the U.S**  
-As climate change increasingly influences migration patterns, I wanted to explore its impact across the U.S. This map visualizes migration trends influenced by climate events that offers insights into how communities are adapting to environmental changes.
+**Migration Patterns in the U.S**  
+I explored migration patterns in the U.S. Using IRS county-to-county migration data, this map visualizes where people are moving across the country. Migration trends are shaped by economic opportunities, housing affordability, climate risks, and lifestyle changes, factors that continue to redefine urban and rural landscapes. Explore [interactive visualization here](https://public.tableau.com/app/profile/junio.mata/viz/USClimateMigrations/Dashboard1)
 
 <div style="text-align: center;"><img src="day05_journey/day5_usmigrations.png" style="width:70%;"></div>
 
@@ -112,7 +112,7 @@ For day 11, I created an animated map showcasing the changes in Arctic ice exten
 
 ## 12. Time and Space
 
-**Land Cover Change in Jabodetabek**  
+**Land Cover Change in Jakarta and Surroundings Area**  
 Having grown up near Jakarta, I’ve always been aware of how rapidly the city has expanded, with once lush green areas gradually turning into concrete landscapes. This visualization captures the transformation of the Jabodetabek region over the past three decades, showing the relentless urban sprawl and shrinking natural green coverage.
 
 <div style="text-align: center;"><img src="day12_timeandspace/day12_jakartalandcoverchange.gif" style="width:70%;"></div>
@@ -136,16 +136,16 @@ Using data from [NASA GISS](https://data.giss.nasa.gov//gistemp/maps/), I tried 
 
 ## 15. My Data
 
-**Mapping My Jogging Routes in Hex**  
-This year, I picked up a new habit—jogging! For Day 15 (My Data), I mapped my running routes across NYC. The hexbin map reveals my favorite spots, and no surprise—parks are my go-to! Hudson River Greenway, Chelsea Park, Prospect Park, Central Park, and Astoria Park have been my top running destinations.I hate running in the middle of the city! Too many intersections, too many stops—it totally kills the rhythm. Looking at this map, I’m wondering… should I switch things up and explore new routes? Any suggestions?
+**Mapping My Running Journey** 
+I picked up a new habit in 2024: jogging! For Day 15 (My Data), I mapped my running routes across NYC. The heatmap reveals my favorite spots, and no surprise, parks are my go-to! Hudson River Greenway, Chelsea Park, Central Park, Prospect Park, and Astoria Park have been my top running destinations. I hate running in the middle of the city. Too many intersections, too many stops and it totally kills the rhythm. Looking at this map, I’m wondering… should I switch things up and explore new routes? Any suggestions?
 
 <div style="text-align: center;"><img src="day15_mydata\day15_myrunningroutes.png" style="width:70%;"></div>
 
 
 ## 16. Choropleth
 
-**Most Threatening Disaster in Each County**  
-A choropleth visualization highlighting disaster-prone areas across counties in the U.S.
+**Disaster Risks Across U.S. Counties**  
+This visualization breaks down disaster risks across the U.S., highlighting where counties are most vulnerable to heatwaves, wildfires, droughts, hurricanes, floods, and winter weather. Each map shows the geographic distribution of these hazards, helping to identify regions that face the greatest threats. Explore [interactive visualization here](https://public.tableau.com/app/profile/junio.mata/viz/USClimateMigrations/Dashboard1)
 
 <div style="text-align: center;"><img src="day16_choropleth/day16_usclimaterisk.png" style="width:70%;"></div>
 
@@ -153,7 +153,7 @@ A choropleth visualization highlighting disaster-prone areas across counties in 
 ## 17. Collaborative Map
 
 **NYC Walkability Map**  
-For the collaborative map, I created the NYC Walkability Index with Ismail Rashad. The Walkability Index is formed from five key indices: Land Use Diversity Index (LUDI), Intersection Density Index (IDI), Public Transportation Accessibility Index (PTAI), Population Density Index (PDI), and Normalized Difference Vegetation Index (NDVI). These indices leverage geospatial data to provide a comprehensive perspective on walkability and its impact on urban sustainability and overall livability.
+For the collaborative map, I created the NYC Walkability Index with my colleague, Ismail Rashad. The Walkability Index is formed from five key indices: Land Use Diversity Index (LUDI), Intersection Density Index (IDI), Public Transportation Accessibility Index (PTAI), Population Density Index (PDI), and Normalized Difference Vegetation Index (NDVI). These indices leverage geospatial data to provide a comprehensive perspective on walkability and its impact on urban sustainability and overall livability.
 
 <div style="text-align: center;"><img src="day17_collaborative/finalmap_NYC_Walkability_Index.png" style="width:70%;"></div>
 
@@ -201,7 +201,9 @@ For Day 22, I created this minimalist black-and-white circular map of Jakarta’
 ## 23. Memory
 
 **Memories of Lake Powell**  
-Some places just stay with you. For Day 23 (Memory), I mapped Lake Powell, one of the stops from my best-ever road trip last spring break. Driving through Utah and Arizona, visiting national parks, and witnessing breathtaking landscapes made for an incredible journey, and this lake was a standout. I mapped NDVI (vegetation), NDWI (water), and NDBI (built-up areas) to visualize how this stunning reservoir interacts with its surroundings. The water areas stand out in blue (higher NDWI), while vegetation appears green, and the lake itself shows minimal vegetation (red in NDVI).
+Some places just stay with you. For Day 23 (Memory), I mapped Lake Powell, one of the stops from my best-ever road trip last spring break. Driving through Utah and Arizona, visiting national parks, and witnessing breathtaking landscapes made for an incredible journey, and this lake was a standout. I visualized NDVI (vegetation), NDWI (water), True Color (RGB), False Color (NIR, Red, Green), and SWIR False Color. The NDWI highlights the water extent in blue, NDVI shows vegetation in green, and the false-color composites reveal hidden patterns in the landscape. It’s fascinating for me to see how remote sensing unveils different aspects of this iconic reservoir! See the map here: 
+https://ee-juniomata.projects.earthengine.app/view/lakepowell
+
 
 <div style="text-align: center;"><img src="day23_memory\day23_lakepowellmemory.gif" style="width:70%;"></div>
 
@@ -261,11 +263,13 @@ Again, this is my first time using Overture data. I used R to create a 3D visual
 ## 30. The Final Map
 
 **Compilations of Where I Finished Each Map**  
-For the final day of #30DayMapChallenge, I mapped where I created each map: mostly at campus, cafés, and libraries! These spots fueled my creativity, whether I was deep in focus at a study space or switching things up at a cozy café. 🔗 Check out the interactive map [here](day30_finalmap\day30_finalmap_wheretofinish.png)
+For the final day of #30DayMapChallenge, I mapped where I created each map: mostly at campus, cafés, and libraries! These spots fueled my creativity, whether I was deep in focus at a study space or switching things up at a cozy café. 🔗 Check out the interactive map [here](https://public.tableau.com/app/profile/junio.mata/viz/30DaysMapChallenge/Dashboard1)
 
-<div style="text-align: center;"><img src="day30_finalmap\day30_finalmap_wheretofinish.png" style="width:70%;"></div>
+<div style="text-align: center;"><img src="day30_finalmap\day30_finalmap_whereifinished.png" style="width:70%;"></div>
 
-----
+
+A huge thank you to all map makers who inspired me throughout this journey! And If you’ve scrolled this far... Thank you! 🙌 Feedback, thoughts, and collaboration ideas are always welcome. Let’s connect and keep the mapping journey going!
+
 
 ## Contact
 
