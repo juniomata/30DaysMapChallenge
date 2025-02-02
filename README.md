@@ -22,7 +22,6 @@ You can explore my daily map contributions covering a variety of themes such as 
 | Pen & Paper  | 1           |
 
 
-
 ## 1. Points
 
 **North America Renewable Energy Plants**  
@@ -116,7 +115,7 @@ For day 11, I created an animated map showcasing the changes in Arctic ice exten
 **Land Cover Change in Jabodetabek**  
 Having grown up near Jakarta, I’ve always been aware of how rapidly the city has expanded, with once lush green areas gradually turning into concrete landscapes. This visualization captures the transformation of the Jabodetabek region over the past three decades, showing the relentless urban sprawl and shrinking natural green coverage.
 
-<div style="text-align: center;"><img src="day12_timeandspace/LandCover_Changes_Jabodetabek.jpg" style="width:70%;"></div>
+<div style="text-align: center;"><img src="day12_timeandspace/day12_jakartalandcoverchange.gif" style="width:70%;"></div>
 
 
 ## 13. A New Tool
