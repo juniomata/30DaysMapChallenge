@@ -5,7 +5,7 @@ Welcome to my contributions to the 2024 #30DayMapChallenge!
 
 The [30-Day Map Challenge](https://30daymapchallenge.com/) is a challenge initiated by Topi Tjukanov that invites map makers to create and share maps based on daily themes. This is my very first time joining the challenge and it has been an exciting and rewarding experience for me. Although it was originally scheduled for November 2024, I started in early January 2025 and proudly completed all 30 maps by the end of the month!
 
-It’s been a tough yet enjoyable journey that pushed me to try new mapping techniques and explore new data sources. My focus throughout has been on the areas I’m most passionate about: 🌍 climate, 🌱 environment, ♻️ sustainability, and ⚡ energy.
+It’s been a tough yet enjoyable journey that pushed me to try new mapping techniques and explore new data sources. My focus throughout this challenge has been on the areas I’m most passionate about: 🌍climate, 🌱environment, ♻️sustainability, and ⚡energy.
 
 
 You can explore my daily map contributions covering a variety of themes such as [Points](#1-points), [Lines](#2-lines), [Polygons](#3-polygons), [Hexagons](#4-hexagons), [A Journey](#5-a-journey), [Raster](#6-raster), [Vintage Style](#7-vintage-style), [Humanitarian Data Exchange (HDX)](#8-humanitarian-data-exchange-hdx), [AI Only](#9-ai-only), [Pen & Paper](#10-pen--paper), [Arctic](#11-arctic), [Time and Space](#12-time-and-space), [A New Tool](#13-a-new-tool), [A World Map](#14-a-world-map), [My Data](#15-my-data), [Choropleth](#16-choropleth), [Collaborative Map](#17-collaborative-map), [3D](#18-3d), [Typography](#19-typography), [OpenStreetMap](#20-openstreetmap), [Conflict](#21-conflict), [Two Colours](#22-two-colours), [Memory](#23-memory), [Only Circular Shapes](#24-only-circular-shapes), [Heat](#25-heat), [Map Projections](#26-map-projections), [Micromapping](#27-micromapping), [The Blue Planet](#28-the-blue-planet), [Overture](#29-overture), and [The Final Map](#30-the-final-map). Scroll through to discover all 30 creative maps!
@@ -264,6 +264,8 @@ Again, this is my first time using Overture data. I used R to create a 3D visual
 For the final day of #30DayMapChallenge, I mapped where I created each map: mostly at campus, cafés, and libraries! These spots fueled my creativity, whether I was deep in focus at a study space or switching things up at a cozy café. 🔗 Check out the interactive map [here](day30_finalmap\day30_finalmap_wheretofinish.png)
 
 <div style="text-align: center;"><img src="day30_finalmap\day30_finalmap_wheretofinish.png" style="width:70%;"></div>
+
+----
 
 ## Contact
 
