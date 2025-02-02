@@ -261,9 +261,9 @@ Again, this is my first time using Overture data. I used R to create a 3D visual
 ## 30. The Final Map
 
 **Compilations of Where I Finished Each Map**  
-A summary visualization of all maps completed during the challenge.
+For the final day of #30DayMapChallenge, I mapped where I created each map: mostly at campus, cafés, and libraries! These spots fueled my creativity, whether I was deep in focus at a study space or switching things up at a cozy café. 🔗 Check out the interactive map [here](day30_finalmap\day30_finalmap_wheretofinish.png)
 
-<div style="text-align: center;"><img src="day30_final" style="width:70%;"></div>
+<div style="text-align: center;"><img src="day30_finalmap\day30_finalmap_wheretofinish.png" style="width:70%;"></div>
 
 ## Contact
 
