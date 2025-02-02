@@ -138,7 +138,7 @@ Using data from [NASA GISS](https://data.giss.nasa.gov//gistemp/maps/), I tried 
 
 **Mapping My Running Journey** 
 
-I picked up a new habit in 2024: jogging! For Day 15 (My Data), I mapped my running routes across NYC. The heatmap reveals my favorite spots, and no surprise, parks are my go-to! Hudson River Greenway, Chelsea Park, Central Park, Prospect Park, and Astoria Park have been my top running destinations. I hate running in the middle of the city. Too many intersections, too many stops and it totally kills the rhythm. Looking at this map, I’m wondering… should I switch things up and explore new routes? Any suggestions?
+I picked up a new habit in 2024: jogging! For Day 15 (My Data), I mapped my running routes across NYC. The heatmap reveals my favorite spots, and no surprise, parks are my go-to! Hudson River Greenway, Brooklyn Bridge Park, Central Park, Prospect Park, and Astoria Park have been my top running destinations. I hate running in the middle of the city. Too many intersections, too many stops, and it totally kills the rhythm. Looking at this map, I’m wondering… should I switch things up and explore new routes? Any suggestions?
 
 <div style="text-align: center;"><img src="day15_mydata\day15_myrunningroutes.png" style="width:70%;"></div>
 
@@ -264,7 +264,7 @@ Again, this is my first time using Overture data. I used R to create a 3D visual
 ## 30. The Final Map
 
 **Compilations of Where I Finished Each Map**  
-For the final day of #30DayMapChallenge, I mapped where I created each map: mostly at campus, cafés, and libraries! These spots fueled my creativity, whether I was deep in focus at a study space or switching things up at a cozy café. 🔗 Check out the interactive map [here](https://public.tableau.com/app/profile/junio.mata/viz/30DaysMapChallenge/Dashboard1)
+For the final day of #30DayMapChallenge, I mapped where I created each map: mostly at campus, cafés, and libraries! These spots fueled my creativity, whether I was deep in focus at a study space or switching things up at a cozy café. 🔗 Check out the [interactive map here](https://public.tableau.com/app/profile/junio.mata/viz/30DaysMapChallenge/Dashboard1)
 
 <div style="text-align: center;"><img src="day30_finalmap\day30_finalmap_whereifinished.png" style="width:70%;"></div>
 
